@@ -1,0 +1,42 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'estiloscss/estilosMenu.css' %}">
+    <title>EcoTerraza</title>
+</head>
+<body>
+    {% include "base.html" %}
+    <div class="envoltura-form">
+        <div class="contenedor-form">
+            <h2>Registrarse</h2>
+            <div class="cabecera-form">
+                <img class="img-cabecera" src="{% static 'imagenes/1.png' %}" alt="logo">
+            </div>
+            <div class="cuerpo">
+                <form method="post">{% csrf_token %}
+                    <p><label for="Nombre">Nombre:</label></p>
+                    <input  name="nombre" id="Nombre" type="text" placeholder="Ingrese su nombre">
+
+                    <p><label for="Usuario">Usuario:</label></p>
+                    <input  name="usuario" id="Usuario" type="text" placeholder="Ingrese un Usuario">
+
+                    <p><label for="Contrasenia">Contraseña</label></p>
+                    <input name="contraseña" type="password" id="Contrasenia" placeholder="Ingrese una Contraseña">
+
+                    <p><label for="Edad">Edad</label></p>
+                    <input name="edad" type="number" id="Edad" placeholder="Ingrese su Edad">
+
+                    <p class="bot"><input class="boton" type="submit" value="Registrarse"></p>
+                </form>
+            </div>
+            <div class="pie-form">
+                <a href="{% url 'index' %}"><h2>Inicio</h2></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

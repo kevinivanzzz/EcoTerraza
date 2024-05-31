@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Roboto+Mono:wght@100&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+.p{
+    color: #000;
+    font-family: 'Kanit', sans-serif;
+}
+h1
+{
+    color: #000;
+    text-align: center;
+}
+.contenedor
+{
+    max-width: 120rem;
+    line-height: 1.5;
+}
+
+.terrenos
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.terreno__imagen
+{
+    width: 100%;
+    border: 1rem solid #0d0f20;
+    transition: all 0.3s;
+}
+.terreno__imagen:hover
+{
+    transform: scale(1.05);
+}
+.terreno__imagenes
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+.terreno__img
+{
+    width: 50%;
+    border: 5px solid #0d0f20;
+    transition: all 0.3s;
+}
+.terreno__img:hover
+{
+    transform: scale(1.05);
+}
+
+.terreno__img:last-child
+{
+    margin-left: 2rem;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.terreno__contenido
+{
+    border-radius:  15px;
+    border: 1px solid;
+}
+
+
+/*Footer*/
+.footer
+{
+    background-color: #2b3382;
+    padding: 5rem 0;
+    margin-top: 20rem;
+}
+.footer__texto
+{
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-size: 2.2rem;
+}

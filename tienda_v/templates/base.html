@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'estiloscss/normalize.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'estiloscss/estilosindex.css' %}">
+    
+    <title>EcoTerraza</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="{% url 'index' %}"><img class="header_logo" src="{% static 'imagenes/1.png' %}" alt="logo"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+            {% if request.user.is_authenticated %}
+                <li><a href="#">Inicio</a></li>
+                <li><a href="{% url 'index' %}">Terrenos</a></li>
+                <li><a href="{% url 'logout' %}">Cerrar Sesion</a></li>
+            {% else %}
+                <li><a href="#">Inicio</a></li>
+                <li><a href="{% url 'index' %}">Terrenos</a></li>
+                <li><a href="{% url 'iniciar_sesion' %}">Iniciar Sesion</a></li>
+                <li><a href="{% url 'registrarse' %}">Registrarse</a></li>
+            {% endif %}
+            </ul>
+        </nav>
+        <a href="#" class="btn_contacto"><button>Contacto</button></a>
+    </header>
+    {% block content %}
+       
+    {% endblock %}
+
+ 
+ 
+
+</body>
+</html>

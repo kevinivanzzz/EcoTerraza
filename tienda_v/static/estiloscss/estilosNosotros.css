@@ -1,0 +1,83 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+}
+p{
+    color: #fff;
+    text-align: center;
+}
+.contenedor
+{
+    max-width: 120rem;
+    line-height: 1.5;
+}
+
+.nosotros
+{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+}
+
+@media (min-width: 768px) {
+    .nosotros
+    {
+        
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.dino__img{
+    width: 110%;
+    grid-row: 1/3;
+}
+
+@media (min-width: 768px) {
+    .dino__img
+    {
+        grid-column: 2/3;
+    }
+}
+
+.dinosaurios
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    
+}
+@media (min-width: 768px)
+{
+    .dinosaurios
+    {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+.dinosaurios__img
+{
+    width: 50%;
+}
+
+/*Footer*/
+.footer
+{
+    background-color: #61679b;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.footer__texto
+{
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+   
+    font-size: 2.2rem;
+}

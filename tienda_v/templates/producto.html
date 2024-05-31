@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'estiloscss/normalize.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'estiloscss/estilosProducto.css' %}">
+    <link href="https://getbootstrap.com/docs/4.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/4.6/examples/sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
+    <title>EcoTerraza</title>
+</head>
+<body>
+    
+    {% include "base.html" %}
+    {% block content %}
+    <main class="contenedor">
+        <h1>Venta en 120,000 MXN</h1>
+        <div class="terrenos">
+            <img class="terreno__imagen" src="{% static 'imagenes/terreno_1.jpg' %}" alt="imagen dinosaurio">
+            
+            <div class="terreno__contenido ml-2">
+
+                <h2 class="pt-5">Contactar al vendedor</h2>
+                <form class="row g-3 pt-2 ml-3 mr-3">
+                    <div class="col-md-6">
+                      <label for="inputEmail4" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputPassword4" class="form-label">Apellidos</label>
+                      <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Correo Electronico</label>
+                      <input type="email" class="form-control" id="inputAddress">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress2" class="form-label">Telefono</label>
+                      <input type="number" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="exampleFormControlTextarea1">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="btn btn-primary btn-lg mt-4">Contactar</button>
+                    </div>
+                  </form>
+        </div>
+        <div>
+            <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolorem quis iure quod nihil dolor, quam suscipit adipisci odio cum itaque iste voluptatum tempore quia illum vero. Sapiente, quo laboriosam.z Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt inventore repellendus soluta aut officiis accusamus quo amet! Facere enim, magni ipsum mollitia quia voluptatem, minus consequatur temporibus necessitatibus impedit nisi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dicta eaque corrupti minus iusto repellat quisquam ut, nulla, odio aut autem. Nulla iure enim cum eligendi aliquam! Saepe, quisquam nihil.</p>
+        </div>
+        <div class="terreno__imagenes">
+            <img class="terreno__img" src="{% static 'imagenes/terreno_1.2.jpg' %}" alt="imagen dinosaurio">
+            <img class="terreno__img" src="{% static 'imagenes/terreno_1.3.jpg' %}" alt="imagen dinosaurio">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">EcoTerraza - todos los derechos reservados 2024.</p>
+    </footer>
+ 
+    {% endblock %}
+</body>
+</html>

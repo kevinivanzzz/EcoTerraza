@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main class="contenedor">
+    <h2>Terrenos en venta</h2>
+    <div class="grid">
+        <div class="producto">
+            <a href="{% url 'productos' %}">
+                <img class="producto__imagen" src="{% static 'imagenes/terreno_1.jpg' %}" alt="imagen dinosaurio">
+            </a>
+            <div class="producto__info">
+                <p class="producto__nombre">Terreno en venta con cisterna</p>
+                <p class="producto__info">San Cristobal de las casas</p>
+                <p class="producto__precio">120,000 MXN</p>
+            </div>
+            
+        </div><!--producto-->
+
+        <div class="producto">
+            <a href="{% url 'productos' %}">
+                <img class="producto__imagen" src="{% static 'imagenes/Terreno_2.jpg' %}" alt="imagen dinosaurio">
+            </a>
+            <div class="producto__info">
+                <p class="producto__nombre">Predio Denominado Juan Bautista</p>
+                <p class="producto__info">Mactumactza, Tuxtla Gutiérrezs</p>
+                <p class="producto__precio">400,800 MXN</p>
+                
+            </div>
+        </div><!--producto-->
+
+        <div class="producto">
+            <a href="{% url 'productos' %}">
+                <img class="producto__imagen" src="{% static 'imagenes/terreno_3.jpg' %}" alt="imagen dinosaurio">
+            </a>
+            <div class="producto__info">
+                <p class="producto__nombre">Terreno en Venta con Cisterna, San Josè Teran.</p>
+                <p class="producto__info">San José Terán, Tuxtla Gutiérrez</p>
+                <p class="producto__precio">300,000 MXN</p>
+                
+            </div>
+        </div><!--producto-->
+
+        <div class="producto">
+            <a href="{% url 'productos' %}">
+                <img class="producto__imagen" src="{% static 'imagenes/terreno_4.jpg' %}" alt="imagen dinosaurio">
+            </a>
+            <div class="producto__info">
+                <p class="producto__nombre">Calzada Mactumatza</p>
+                <p class="producto__info">Tuxtla Gutiérrez, Chiapas</p>
+                <p class="producto__precio">400,000 MXN</p>
+                
+            </div>
+        </div><!--producto-->
+
+        <div class="producto">
+            <a href="{% url 'productos' %}">
+                <img class="producto__imagen" src="{% static 'imagenes/terreno_5.jpg' %}" alt="imagen dinosaurio">
+            </a>
+            <div class="producto__info">
+                <p class="producto__nombre">lote n. 13, de la manzana n.3,  en Circuito afluente, de la Col. denominada "La pradera"</p>
+                <p class="producto__info">6 de Junio, Tuxtla Gutiérrez</p>
+                <p class="producto__precio">250,000 MXN</p>
+                
+            </div>
+        </div><!--producto-->
+
+        <div class="producto">
+            <a href="{% url 'productos' %}">
+                <img class="producto__imagen" src="{% static 'imagenes/terreno_6.jpg' %}" alt="imagen dinosaurio">
+            </a>
+            <div class="producto__info">
+                <p class="producto__nombre">Campestre-raymundo Enriquez</p>
+                <p class="producto__info">Fraccionamiento Campestre Arenal, Tuxtla Gutiérrez</p>
+                <p class="producto__precio">2,500,000 MXN</p>
+                
+            </div>
+        </div><!--producto-->
+
+        <div class="producto">
+            <a href="{% url 'productos' %}">
+                <img class="producto__imagen" src="{% static 'imagenes/terreno_7.jpg' %}" alt="imagen dinosaurio">
+            </a>
+            <div class="producto__info">
+                <p class="producto__nombre">RIO GRIJALVA S/N</p>
+                <p class="producto__info">Colinas del Sur, Tuxtla Gutiérrez</p>
+                <p class="producto__precio">250,000 MXN</p>
+                
+            </div>
+        </div><!--producto-->
+
+        <div class="producto">
+            <a href="{% url 'productos' %}">
+                <img class="producto__imagen" src="{% static 'imagenes/terreno_8.jpg' %}" alt="imagen dinosaurio">
+            </a>
+            <div class="producto__info">
+                <p class="producto__nombre">CARR EMILIANO ZAPATA KM 13 Terán Tuxtla Gutiérrez, Chiapas, México</p>
+                <p class="producto__info">Terán, Tuxtla Gutiérrez</p>
+                <p class="producto__precio">2,000,000 MXN</p>
+                
+            </div>
+        </div><!--producto-->
+
+        <div class="producto">
+            <a href="{% url 'productos' %}">
+                <img class="producto__imagen" src="{% static 'imagenes/terreno_9.jpg' %}" alt="imagen dinosaurio">
+            </a>
+            <div class="producto__info">
+                <p class="producto__nombre">14 sur poniente S/N</p>
+                <p class="producto__info">Belén, Tuxtla Gutiérrez</p>
+                <p class="producto__precio">1,500,000 MXN</p>
+                
+            </div>
+        </div><!--producto-->
+
+        
+    </div>
+</main>
+
+<footer class="footer">
+    <p class="footer__texto">EcoTerraza - todos los derechos reservados 2023.</p>
+</footer>
+{% endblock %}
